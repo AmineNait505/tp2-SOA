@@ -1,10 +1,12 @@
 package Service;
 
+import java.util.*;
+
 public class Compte {
 private int code;
 private double solde;
-private String date;
-public Compte(int code, double solde, String date) {
+private Date date;
+public Compte(int code, double solde, Date date) {
 	super();
 	this.code = code;
 	this.solde = solde;
@@ -22,10 +24,10 @@ public double getSolde() {
 public void setSolde(double solde) {
 	this.solde = solde;
 }
-public String getDate() {
+public Date getDate() {
 	return date;
 }
-public void setDate(String date) {
+public void setDate(Date date) {
 	this.date = date;
 }
 
